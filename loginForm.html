@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body  {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .title{
+            font-weight: 800;
+            color: aliceblue;
+            background-color: green;
+            padding: 10px 50px;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+        }
+        .formContainer{
+            background-color: white;
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .pass{
+            display: block;
+            align-self: start;
+            
+            
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+        }
+        .row{
+            width: 100%;;
+        }
+        .wrapper{
+            width: 300px;
+        }
+        input[type=submit]{
+            background-color: green;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: large;
+            color: azure;
+        }
+        a{
+            color:cornflowerblue
+        }
+        .Signup{
+            text-decoration: none;
+
+        }
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/69e1752eba.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+    <div class="title"><h1>Login Form</h1> </div>
+    <form  action="#">
+        <div class="formContainer">
+        <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Email or Phone Number">
+
+        </div>
+        <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder=" password">
+            
+        </div>
+        <div class="pass"><a href="#">Forgot password</a></div>
+        <div class="row">
+            
+            <input type="submit" value="Login">
+        </div>
+     
+            
+       
+        <div>Not a member?<a class="Signup" href="">Signup Now</a></div> 
+    </div>
+    </form>
+     </div>
+</body>
+</html>
