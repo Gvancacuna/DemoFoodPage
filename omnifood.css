@@ -1,0 +1,221 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: 0.3;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10vw;
+  width: 50%;
+  gap: 30px;
+}
+nav li {
+  list-style: none;
+  transition: all 0.2s;
+  font-size: 24px;
+}
+li:hover {
+  border-bottom: 8px solid orangered;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  overflow: hidden;
+  background-color: rgb(97, 119, 94);
+  opacity: 0.6;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+.nav-icon {
+  height: 100%;
+  border-radius: 60%;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+.firstSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(https://thumbs.dreamstime.com/b/abstract-food-background-ingredients-such-as-fruits-vegetables-spices-abstract-food-background-ingredients-such-as-314326303.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.button1,
+.button2 {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+.button1 {
+  background-color: orange;
+  color: white;
+}
+.button1:hover {
+  background-color: rgb(171, 134, 56);
+  opacity: 0.9;
+}
+.button2:hover {
+  background-color: orange;
+  opacity: 0.9;
+}
+
+.welcome-textBox {
+  display: flex;
+  height: 85%;
+  padding-left: 40px;
+  max-width: 500px;
+  flex-direction: column;
+  justify-content: center;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 40px;
+  background-color: rgb(243, 202, 148);
+}
+
+.features-container {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  align-items: baseline;
+}
+
+.features-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  min-width: 150px;
+  padding: 20px;
+}
+
+.features-box .feature-item {
+  flex: 1;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+/* Switch to column layout when container is very small */
+@media (max-width: 450px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center; /* Center items in column mode */
+  }
+  ul {
+    width: 80%;
+  }
+  nav li {
+    font-size: 19px;
+  }
+
+  .features-box {
+    width: 100%; /* Full width in column mode */
+    min-width: unset; /* Remove min-width restriction in column mode */
+  }
+}
+.features-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+  opacity: 0.7;
+  text-align: start;
+}
+.features-heading {
+  line-height: 2;
+  font-size: 19px;
+  font-weight: 550;
+  opacity: 0.8;
+}
+.pictures-container {
+  margin: 40px;
+}
+.pictures-row {
+  height: 50%;
+  display: flex;
+}
+.picture {
+  width: 25%;
+  overflow: hidden;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  transition: 0.3s ease;
+}
+.picture:hover img {
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+.section-steps p {
+  font-size: 20px;
+  color: gray;
+}
+.number {
+  font-size: 35px;
+  color: orange;
+  border: 5px solid orange;
+  border-radius: 50%;
+  padding: 0px 10px;
+  margin-right: 20px;
+}
+.row,
+.inside-row {
+  display: flex;
+}
+.row img {
+  width: 200px;
+  margin-right: 30px;
+}
+.section-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: antiquewhite;
+}
+.inside-row {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.inside-row:first-of-type {
+  margin-top: 40px;
+}
+@media (max-width: 520px) {
+  .row img:first-child {
+    width: 160px;
+    margin-top: 20px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-steps p {
+    font-size: 16px;
+    color: gray;
+  }
+  .featuresTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
